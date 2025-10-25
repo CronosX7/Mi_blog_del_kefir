@@ -1,0 +1,391 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Qué es el Kéfir? - Blog del Kéfir</title>
+    <style>
+        /* ESTILOS GENERALES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f9f5f0;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* NAVEGACIÓN */
+        nav {
+            background-color: white;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #764ba2;
+        }
+
+        /* CONTENEDOR DEL ARTÍCULO */
+        .article-container {
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        /* INFORMACIÓN DEL ARTÍCULO */
+        .article-header {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+
+        .article-header h2 {
+            color: #667eea;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-meta {
+            color: #888;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-meta span {
+            margin-right: 1.5rem;
+        }
+
+        /* IMAGEN DESTACADA */
+        .featured-image {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            margin-bottom: 2rem;
+        }
+
+        /* CONTENIDO DEL ARTÍCULO */
+        .article-content {
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .article-content h3 {
+            color: #667eea;
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        .article-content ul {
+            margin-left: 2rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-content li {
+            margin-bottom: 0.8rem;
+        }
+
+        /* CAJA DESTACADA */
+        .highlight-box {
+            background-color: #f0f4ff;
+            border-left: 4px solid #667eea;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 5px;
+        }
+
+        .highlight-box strong {
+            color: #667eea;
+        }
+
+        /* IMAGEN DENTRO DEL CONTENIDO */
+        .content-image {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(45deg, #56ab2f 0%, #a8e063 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            margin: 2rem 0;
+        }
+
+        /* NAVEGACIÓN ENTRE ARTÍCULOS */
+        .article-navigation {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .nav-button {
+            flex: 1;
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .nav-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+        }
+
+        .nav-button .label {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-button .title {
+            color: #667eea;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .article-header h2 {
+                font-size: 2rem;
+            }
+
+            .featured-image {
+                height: 250px;
+                font-size: 3rem;
+            }
+
+            .article-navigation {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- CABECERA -->
+    <header>
+        <h1>🥛 Blog del Kéfir</h1>
+    </header>
+
+    <!-- NAVEGACIÓN -->
+    <nav>
+        <ul>
+            <li><a href="index.html">← Volver al inicio</a></li>
+            <li><a href="entrada2.html">Siguiente entrada →</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENEDOR DEL ARTÍCULO -->
+    <div class="article-container">
+        
+        <!-- ENCABEZADO DEL ARTÍCULO -->
+        <article class="article-header">
+            <h2>¿Qué es el Kéfir? Origen y Propiedades</h2>
+            <div class="article-meta">
+                <span>📅 Noviembre 2025</span>
+                <span>⏱️ 5 min de lectura</span>
+                <span>✍️ Blog del Kéfir</span>
+            </div>
+        </article>
+
+        <!-- IMAGEN DESTACADA -->
+        <div class="featured-image">
+            🥛
+        </div>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <article class="article-content">
+            <p>
+                El kéfir es una bebida fermentada milenaria que ha ganado popularidad en 
+                los últimos años gracias a sus extraordinarias propiedades probióticas y 
+                beneficios para la salud. Pero, ¿qué es exactamente el kéfir y de dónde 
+                proviene esta bebida tan especial?
+            </p>
+
+            <h3>🌍 Origen e Historia del Kéfir</h3>
+            <p>
+                El kéfir tiene sus raíces en las montañas del Cáucaso, una región que se 
+                extiende entre Europa Oriental y Asia Occidental. La palabra "kéfir" proviene 
+                del turco "keyif", que significa "sentirse bien", un nombre muy apropiado 
+                considerando sus beneficios para la salud.
+            </p>
+            <p>
+                Durante siglos, los habitantes de esta región han considerado el kéfir como 
+                un regalo de los dioses y lo han utilizado como un elixir de larga vida. 
+                Las familias guardaban celosamente sus granos de kéfir y los transmitían de 
+                generación en generación como un tesoro preciado.
+            </p>
+
+            <div class="highlight-box">
+                <strong>Dato curioso:</strong> Los granos de kéfir eran considerados tan valiosos 
+                que las familias del Cáucaso los incluían como parte de la dote matrimonial. 
+                Se creía que quien poseía granos de kéfir tendría salud y prosperidad.
+            </div>
+
+            <h3>🔬 ¿Qué son los Granos de Kéfir?</h3>
+            <p>
+                Contrario a lo que su nombre sugiere, los granos de kéfir no son cereales. 
+                Son pequeñas estructuras gelatinosas blancas o amarillentas que parecen 
+                coliflor en miniatura. Estos "granos" son en realidad colonias simbióticas 
+                de bacterias y levaduras (conocidas como SCOBY, por sus siglas en inglés: 
+                Symbiotic Culture of Bacteria and Yeast).
+            </p>
+
+            <div class="content-image">
+                🦠
+            </div>
+
+            <p>
+                Los granos de kéfir están compuestos por una matriz de polisacáridos llamada 
+                kefiran, que alberga una comunidad compleja de microorganismos beneficiosos:
+            </p>
+
+            <ul>
+                <li><strong>Bacterias lácticas:</strong> Lactobacillus, Lactococcus, Leuconostoc</li>
+                <li><strong>Bacterias acéticas:</strong> Que producen ácido acético</li>
+                <li><strong>Levaduras:</strong> Saccharomyces, Kluyveromyces, Candida</li>
+            </ul>
+
+            <h3>⚗️ El Proceso de Fermentación</h3>
+            <p>
+                Cuando los granos de kéfir se introducen en leche (o agua con azúcar para 
+                el kéfir de agua), los microorganismos comienzan a fermentar los azúcares 
+                presentes. Este proceso de fermentación transforma la leche en una bebida 
+                ligeramente ácida, cremosa y efervescente.
+            </p>
+            <p>
+                Durante la fermentación, que típicamente toma entre 12 y 48 horas a temperatura 
+                ambiente, ocurren varios procesos importantes:
+            </p>
+            <ul>
+                <li>Los azúcares de la leche (lactosa) se convierten en ácido láctico</li>
+                <li>Se producen vitaminas del complejo B y vitamina K</li>
+                <li>Las proteínas se descomponen parcialmente, facilitando su digestión</li>
+                <li>Se generan compuestos bioactivos con propiedades antimicrobianas</li>
+            </ul>
+
+            <h3>🆚 Diferencias entre Kéfir y Yogur</h3>
+            <p>
+                Aunque el kéfir y el yogur son ambos productos lácteos fermentados, presentan 
+                diferencias importantes:
+            </p>
+            <ul>
+                <li><strong>Diversidad de microorganismos:</strong> El kéfir contiene entre 30-50 
+                cepas diferentes de bacterias y levaduras, mientras que el yogur típicamente 
+                contiene 2-3 cepas</li>
+                <li><strong>Consistencia:</strong> El kéfir es más líquido y se puede beber, 
+                mientras que el yogur es más espeso</li>
+                <li><strong>Sabor:</strong> El kéfir tiene un sabor más ácido y puede tener 
+                un ligero toque efervescente debido a las levaduras</li>
+                <li><strong>Contenido de probióticos:</strong> El kéfir generalmente contiene 
+                una mayor cantidad y variedad de probióticos</li>
+            </ul>
+
+            <div class="highlight-box">
+                <strong>Para recordar:</strong> El kéfir es como el "yogur premium" del mundo 
+                de los lácteos fermentados. Contiene más probióticos, más variedad de 
+                microorganismos beneficiosos y ofrece beneficios únicos para la salud intestinal.
+            </div>
+
+            <h3>📊 Composición Nutricional</h3>
+            <p>
+                Una taza (240 ml) de kéfir bajo en grasa contiene aproximadamente:
+            </p>
+            <ul>
+                <li>104 calorías</li>
+                <li>9 gramos de proteína</li>
+                <li>11 gramos de carbohidratos</li>
+                <li>2.5 gramos de grasa</li>
+                <li>30% del valor diario de calcio</li>
+                <li>25% del valor diario de vitamina D</li>
+                <li>Vitaminas del complejo B (especialmente B12)</li>
+                <li>Fósforo, magnesio y vitamina K2</li>
+            </ul>
+
+            <p style="margin-top: 2rem;">
+                Ahora que conoces qué es el kéfir y de dónde proviene, en la siguiente entrada 
+                exploraremos los 7 beneficios principales que esta maravillosa bebida puede 
+                aportar a tu salud.
+            </p>
+        </article>
+
+        <!-- NAVEGACIÓN ENTRE ARTÍCULOS -->
+        <div class="article-navigation">
+            <a href="index.html" class="nav-button">
+                <div class="label">← Anterior</div>
+                <div class="title">Volver al inicio</div>
+            </a>
+            <a href="entrada2.html" class="nav-button">
+                <div class="label">Siguiente →</div>
+                <div class="title">7 Beneficios del Kéfir</div>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Blog del Kéfir | Creado con ❤️ para la Universidad</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog del Kéfir - Descubre sus beneficios</title>
+    <style>
+        /* ESTILOS GENERALES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f9f5f0;
+        }
+
+        /* HEADER - Cabecera del blog */
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* NAVEGACIÓN */
+        nav {
+            background-color: white;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #667eea;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #764ba2;
+        }
+
+        /* CONTENEDOR PRINCIPAL */
+        .container {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        /* SECCIÓN DE INTRODUCCIÓN */
+        .intro {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 3rem;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+
+        .intro h2 {
+            color: #667eea;
+            margin-bottom: 1rem;
+        }
+
+        /* GRID DE ENTRADAS DEL BLOG */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        /* TARJETA DE CADA ENTRADA */
+        .blog-card {
+            background-color: white;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .blog-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+        }
+
+        .blog-card-image {
+            width: 100%;
+            height: 200px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .entrada1-img {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect fill="%23667eea" width="400" height="300"/><text x="50%" y="50%" font-size="24" fill="white" text-anchor="middle" dy=".3em">🥛 Probióticos</text></svg>');
+        }
+
+        .entrada2-img {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect fill="%23764ba2" width="400" height="300"/><text x="50%" y="50%" font-size="24" fill="white" text-anchor="middle" dy=".3em">💪 Salud</text></svg>');
+        }
+
+        .entrada3-img {
+            background-image: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300"><rect fill="%2356ab2f" width="400" height="300"/><text x="50%" y="50%" font-size="24" fill="white" text-anchor="middle" dy=".3em">🍽️ Recetas</text></svg>');
+        }
+
+        .blog-card-content {
+            padding: 1.5rem;
+        }
+
+        .blog-card h3 {
+            color: #333;
+            margin-bottom: 0.5rem;
+        }
+
+        .blog-card .date {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 1rem;
+        }
+
+        .blog-card p {
+            color: #666;
+            margin-bottom: 1rem;
+        }
+
+        .blog-card a {
+            display: inline-block;
+            background-color: #667eea;
+            color: white;
+            padding: 0.5rem 1.5rem;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .blog-card a:hover {
+            background-color: #764ba2;
+        }
+
+        /* FOOTER - Pie de página */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <!-- CABECERA DEL BLOG -->
+    <header>
+        <h1>🥛 Blog del Kéfir</h1>
+        <p>Descubre todos los beneficios de este superalimento probiótico</p>
+    </header>
+
+    <!-- MENÚ DE NAVEGACIÓN -->
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#entradas">Entradas</a></li>
+            <li><a href="#sobre">Sobre el blog</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <div class="container">
+        <!-- INTRODUCCIÓN -->
+        <section class="intro">
+            <h2>Bienvenido al Blog del Kéfir</h2>
+            <p>
+                El kéfir es una bebida fermentada milenaria que se ha convertido en uno de los 
+                superalimentos más populares de los últimos años. Rico en probióticos, vitaminas 
+                y minerales, el kéfir ofrece innumerables beneficios para la salud digestiva, 
+                el sistema inmunológico y el bienestar general.
+            </p>
+            <p>
+                En este blog encontrarás información detallada sobre qué es el kéfir, sus 
+                beneficios respaldados por la ciencia, y deliciosas recetas para incorporarlo 
+                en tu dieta diaria.
+            </p>
+        </section>
+
+        <!-- ENTRADAS DEL BLOG -->
+        <section id="entradas">
+            <h2 style="text-align: center; margin-bottom: 2rem; color: #667eea;">Últimas Entradas</h2>
+            
+            <div class="blog-grid">
+                <!-- ENTRADA 1 -->
+                <article class="blog-card">
+                    <div class="blog-card-image entrada1-img"></div>
+                    <div class="blog-card-content">
+                        <h3>¿Qué es el Kéfir? Origen y Propiedades</h3>
+                        <p class="date">📅 Noviembre 2025</p>
+                        <p>
+                            Descubre qué es el kéfir, de dónde proviene y por qué contiene 
+                            millones de bacterias beneficiosas para tu salud intestinal.
+                        </p>
+                        <a href="entrada1.html">Leer más →</a>
+                    </div>
+                </article>
+
+                <!-- ENTRADA 2 -->
+                <article class="blog-card">
+                    <div class="blog-card-image entrada2-img"></div>
+                    <div class="blog-card-content">
+                        <h3>7 Beneficios del Kéfir para tu Salud</h3>
+                        <p class="date">📅 Noviembre 2025</p>
+                        <p>
+                            Conoce los beneficios científicamente comprobados del kéfir: 
+                            desde mejorar la digestión hasta fortalecer tu sistema inmune.
+                        </p>
+                        <a href="entrada2.html">Leer más →</a>
+                    </div>
+                </article>
+
+                <!-- ENTRADA 3 -->
+                <article class="blog-card">
+                    <div class="blog-card-image entrada3-img"></div>
+                    <div class="blog-card-content">
+                        <h3>Recetas Deliciosas con Kéfir</h3>
+                        <p class="date">📅 Noviembre 2025</p>
+                        <p>
+                            Aprende a preparar smoothies, aderezos y postres saludables 
+                            utilizando kéfir como ingrediente principal.
+                        </p>
+                        <a href="entrada3.html">Leer más →</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </div>
+
+    <!-- PIE DE PÁGINA -->
+    <footer>
+        <p>&copy; 2025 Blog del Kéfir | Creado con ❤️ para la Universidad</p>
+    </footer>
+</body>
+</html>

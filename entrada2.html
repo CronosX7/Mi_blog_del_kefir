@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Beneficios del Kéfir para tu Salud - Blog del Kéfir</title>
+    <style>
+        /* ESTILOS GENERALES */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Georgia', serif;
+            line-height: 1.8;
+            color: #333;
+            background-color: #f9f5f0;
+        }
+
+        /* HEADER */
+        header {
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* NAVEGACIÓN */
+        nav {
+            background-color: white;
+            padding: 1rem;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+        }
+
+        nav a {
+            color: #764ba2;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #667eea;
+        }
+
+        /* CONTENEDOR DEL ARTÍCULO */
+        .article-container {
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+
+        /* INFORMACIÓN DEL ARTÍCULO */
+        .article-header {
+            background-color: white;
+            padding: 2rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+        }
+
+        .article-header h2 {
+            color: #764ba2;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-meta {
+            color: #888;
+            font-size: 0.95rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .article-meta span {
+            margin-right: 1.5rem;
+        }
+
+        /* IMAGEN DESTACADA */
+        .featured-image {
+            width: 100%;
+            height: 400px;
+            background: linear-gradient(135deg, #764ba2 0%, #667eea 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            margin-bottom: 2rem;
+        }
+
+        /* CONTENIDO DEL ARTÍCULO */
+        .article-content {
+            background-color: white;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+        }
+
+        .article-content h3 {
+            color: #764ba2;
+            font-size: 1.8rem;
+            margin-top: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .article-content p {
+            margin-bottom: 1.5rem;
+            text-align: justify;
+        }
+
+        /* TARJETA DE BENEFICIO */
+        .benefit-card {
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            border-left: 5px solid #764ba2;
+            padding: 2rem;
+            margin: 2rem 0;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+        }
+
+        .benefit-card h4 {
+            color: #764ba2;
+            font-size: 1.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .benefit-card .icon {
+            font-size: 2rem;
+        }
+
+        .benefit-card p {
+            margin-bottom: 1rem;
+        }
+
+        .benefit-card ul {
+            margin-left: 1.5rem;
+            margin-top: 1rem;
+        }
+
+        .benefit-card li {
+            margin-bottom: 0.5rem;
+        }
+
+        /* CAJA DESTACADA */
+        .highlight-box {
+            background-color: #f0f4ff;
+            border-left: 4px solid #764ba2;
+            padding: 1.5rem;
+            margin: 2rem 0;
+            border-radius: 5px;
+        }
+
+        .highlight-box strong {
+            color: #764ba2;
+        }
+
+        /* IMAGEN DENTRO DEL CONTENIDO */
+        .content-image {
+            width: 100%;
+            height: 300px;
+            background: linear-gradient(45deg, #667eea 0%, #764ba2 100%);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            margin: 2rem 0;
+        }
+
+        /* NAVEGACIÓN ENTRE ARTÍCULOS */
+        .article-navigation {
+            display: flex;
+            justify-content: space-between;
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .nav-button {
+            flex: 1;
+            background-color: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            text-align: center;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .nav-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 25px rgba(0,0,0,0.15);
+        }
+
+        .nav-button .label {
+            color: #888;
+            font-size: 0.9rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .nav-button .title {
+            color: #764ba2;
+            font-weight: bold;
+        }
+
+        /* FOOTER */
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 768px) {
+            .article-header h2 {
+                font-size: 2rem;
+            }
+
+            .featured-image {
+                height: 250px;
+                font-size: 3rem;
+            }
+
+            .article-navigation {
+                flex-direction: column;
+            }
+
+            .benefit-card {
+                padding: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- CABECERA -->
+    <header>
+        <h1>💪 Blog del Kéfir</h1>
+    </header>
+
+    <!-- NAVEGACIÓN -->
+    <nav>
+        <ul>
+            <li><a href="index.html">← Volver al inicio</a></li>
+            <li><a href="entrada1.html">← Entrada anterior</a></li>
+            <li><a href="entrada3.html">Siguiente entrada →</a></li>
+        </ul>
+    </nav>
+
+    <!-- CONTENEDOR DEL ARTÍCULO -->
+    <div class="article-container">
+        
+        <!-- ENCABEZADO DEL ARTÍCULO -->
+        <article class="article-header">
+            <h2>7 Beneficios del Kéfir para tu Salud</h2>
+            <div class="article-meta">
+                <span>📅 Noviembre 2025</span>
+                <span>⏱️ 7 min de lectura</span>
+                <span>✍️ Blog del Kéfir</span>
+            </div>
+        </article>
+
+        <!-- IMAGEN DESTACADA -->
+        <div class="featured-image">
+            💪
+        </div>
+
+        <!-- CONTENIDO PRINCIPAL -->
+        <article class="article-content">
+            <p>
+                El kéfir no es solo una bebida deliciosa, es un verdadero superalimento que 
+                ofrece múltiples beneficios respaldados por la ciencia. En esta entrada 
+                exploraremos los 7 principales beneficios que el consumo regular de kéfir 
+                puede aportar a tu salud.
+            </p>
+
+            <!-- BENEFICIO 1 -->
+            <div class="benefit-card">
+                <h4><span class="icon">🦠</span> 1. Mejora la Salud Digestiva</h4>
+                <p>
+                    El kéfir es una fuente excepcional de probióticos, microorganismos vivos 
+                    que benefician tu sistema digestivo. Estos probióticos ayudan a restaurar 
+                    el equilibrio de la flora intestinal, especialmente después de tratamientos 
+                    con antibióticos.
+                </p>
+                <p><strong>Beneficios específicos:</strong></p>
+                <ul>
+                    <li>Alivia los síntomas del síndrome del intestino irritable</li>
+                    <li>Reduce la hinchazón y los gases</li>
+                    <li>Mejora la regularidad intestinal</li>
+                    <li>Ayuda a prevenir y tratar la diarrea</li>
+                </ul>
+            </div>
+
+            <!-- BENEFICIO 2 -->
+            <div class="benefit-card">
+                <h4><span class="icon">🛡️</span> 2. Fortalece el Sistema Inmunológico</h4>
+                <p>
+                    Los probióticos del kéfir no solo benefician tu digestión, también juegan 
+                    un papel crucial en el fortalecimiento de tu sistema inmune. Aproximadamente 
+                    el 70% de tu sistema inmunológico reside en el intestino, por lo que 
+                    mantener una flora intestinal saludable es fundamental.
+                </p>
+                <p><strong>Cómo ayuda:</strong></p>
+                <ul>
+                    <li>Estimula la producción de células inmunitarias</li>
+                    <li>Aumenta la producción de anticuerpos</li>
+                    <li>Reduce la duración de infecciones respiratorias</li>
+                    <li>Ayuda a prevenir resfriados y gripes</li>
+                </ul>
+            </div>
+
+            <div class="highlight-box">
+                <strong>Dato científico:</strong> Estudios han demostrado que las personas que 
+                consumen kéfir regularmente tienen un 40% menos de probabilidades de desarrollar 
+                infecciones respiratorias comunes.
+            </div>
+
+            <!-- BENEFICIO 3 -->
+            <div class="benefit-card">
+                <h4><span class="icon">🦴</span> 3. Fortalece los Huesos</h4>
+                <p>
+                    El kéfir es una excelente fuente de calcio, fósforo, magnesio y vitamina K2, 
+                    nutrientes esenciales para la salud ósea. La vitamina K2 es particularmente 
+                    importante ya que ayuda a dirigir el calcio hacia los huesos y dientes, en 
+                    lugar de depositarse en las arterias.
+                </p>
+                <p><strong>Beneficios para los huesos:</strong></p>
+                <ul>
+                    <li>Aumenta la densidad mineral ósea</li>
+                    <li>Reduce el riesgo de osteoporosis</li>
+                    <li>Mejora la absorción de calcio</li>
+                    <li>Previene fracturas en adultos mayores</li>
+                </ul>
+            </div>
+
+            <div class="content-image">
+                🥛💪
+            </div>
+
+            <!-- BENEFICIO 4 -->
+            <div class="benefit-card">
+                <h4><span class="icon">🧬</span> 4. Propiedades Antibacterianas y Antifúngicas</h4>
+                <p>
+                    El kéfir contiene un probiótico único llamado Lactobacillus kefiri, que es 
+                    exclusivo de esta bebida. Este probiótico, junto con otros microorganismos 
+                    presentes en el kéfir, produce compuestos bioactivos con propiedades 
+                    antimicrobianas.
+                </p>
+                <p><strong>Combate:</strong></p>
+                <ul>
+                    <li>Bacterias dañinas como Salmonella y E. coli</li>
+                    <li>Infecciones por Helicobacter pylori</li>
+                    <li>Candida y otras infecciones por hongos</li>
+                    <li>Patógenos intestinales diversos</li>
+                </ul>
+            </div>
+
+            <!-- BENEFICIO 5 -->
+            <div class="benefit-card">
+                <h4><span class="icon">❤️</span> 5. Mejora la Salud Cardiovascular</h4>
+                <p>
+                    El consumo regular de kéfir se ha asociado con mejoras significativas en 
+                    los marcadores de salud cardiovascular. Los probióticos y péptidos bioactivos 
+                    del kéfir ayudan a regular el colesterol y la presión arterial.
+                </p>
+                <p><strong>Efectos cardiovasculares:</strong></p>
+                <ul>
+                    <li>Reduce el colesterol LDL ("malo")</li>
+                    <li>Aumenta el colesterol HDL ("bueno")</li>
+                    <li>Ayuda a regular la presión arterial</li>
+                    <li>Disminuye los triglicéridos</li>
+                </ul>
+            </div>
+
+            <div class="highlight-box">
+                <strong>Investigación reciente:</strong> Un estudio de 2023 encontró que consumir 
+                200ml de kéfir diariamente durante 8 semanas redujo el colesterol LDL en un 
+                promedio del 10% en participantes con hipercolesterolemia leve.
+            </div>
+
+            <!-- BENEFICIO 6 -->
+            <div class="benefit-card">
+                <h4><span class="icon">🧘</span> 6. Beneficios para la Salud Mental</h4>
+                <p>
+                    La conexión entre el intestino y el cerebro (conocida como el eje intestino-cerebro) 
+                    significa que la salud de tu flora intestinal puede afectar tu estado de ánimo 
+                    y salud mental. Los probióticos del kéfir pueden tener efectos positivos en 
+                    la ansiedad y el estrés.
+                </p>
+                <p><strong>Impacto en la salud mental:</strong></p>
+                <ul>
+                    <li>Reduce síntomas de ansiedad y depresión</li>
+                    <li>Mejora la calidad del sueño</li>
+                    <li>Aumenta la producción de neurotransmisores como la serotonina</li>
+                    <li>Reduce los niveles de cortisol (hormona del estrés)</li>
+                </ul>
+            </div>
+
+            <!-- BENEFICIO 7 -->
+            <div class="benefit-card">
+                <h4><span class="icon">🍽️</span> 7. Apto para Personas con Intolerancia a la Lactosa</h4>
+                <p>
+                    Aunque pueda parecer contradictorio, muchas personas con intolerancia a la 
+                    lactosa pueden tolerar el kéfir sin problemas. Durante el proceso de fermentación, 
+                    las bacterias y levaduras descomponen gran parte de la lactosa presente en la leche.
+                </p>
+                <p><strong>Por qué es más tolerable:</strong></p>
+                <ul>
+                    <li>Contiene hasta un 99% menos lactosa que la leche regular</li>
+                    <li>Los probióticos producen lactasa, la enzima que digiere la lactosa</li>
+                    <li>La fermentación más prolongada reduce aún más el contenido de lactosa</li>
+                    <li>Existe la opción de kéfir de agua para quienes evitan lácteos completamente</li>
+                </ul>
+            </div>
+
+            <h3>🎯 Conclusión</h3>
+            <p>
+                El kéfir es mucho más que una simple bebida fermentada. Es un alimento funcional 
+                que puede mejorar múltiples aspectos de tu salud, desde la digestión hasta la 
+                salud cardiovascular y mental. Los estudios científicos continúan descubriendo 
+                nuevos beneficios de esta bebida ancestral.
+            </p>
+            <p>
+                Para obtener los máximos beneficios, se recomienda consumir entre 1 y 2 tazas 
+                (250-500ml) de kéfir diariamente. Comienza con pequeñas cantidades si no estás 
+                acostumbrado a los alimentos fermentados, y aumenta gradualmente la porción.
+            </p>
+
+            <div class="highlight-box">
+                <strong>Consejo importante:</strong> Si tienes alguna condición médica específica 
+                o sistema inmunológico comprometido, consulta con tu médico antes de incorporar 
+                kéfir u otros probióticos a tu dieta regular.
+            </div>
+
+            <p style="margin-top: 2rem;">
+                En la siguiente entrada, descubrirás deliciosas recetas para incorporar el kéfir 
+                en tu alimentación diaria de forma creativa y sabrosa. ¡No te la pierdas!
+            </p>
+        </article>
+
+        <!-- NAVEGACIÓN ENTRE ARTÍCULOS -->
+        <div class="article-navigation">
+            <a href="entrada1.html" class="nav-button">
+                <div class="label">← Anterior</div>
+                <div class="title">¿Qué es el Kéfir?</div>
+            </a>
+            <a href="entrada3.html" class="nav-button">
+                <div class="label">Siguiente →</div>
+                <div class="title">Recetas con Kéfir</div>
+            </a>
+        </div>
+
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <p>&copy; 2025 Blog del Kéfir | Creado con ❤️ para la Universidad</p>
+    </footer>
+</body>
+</html>
